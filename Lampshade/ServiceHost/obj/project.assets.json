@@ -3353,6 +3353,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "01_LampshadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3364,6 +3377,80 @@
         },
         "runtime": {
           "bin/placeholder/0_Framework.dll": {}
+        }
+      },
+      "DiscountManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManagement.Application.Contracts": "1.0.0",
+          "DiscountManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.dll": {}
+        }
+      },
+      "DiscountManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "ShopManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Application.Contracts.dll": {}
+        }
+      },
+      "DiscountManagement.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Application.Contracts": "1.0.0",
+          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Configuration.dll": {}
+        }
+      },
+      "DiscountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "DiscountManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.20",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
+          "ShopManagement.Infrastructure.EFCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ShopManagement.Application/1.0.0": {
@@ -3397,6 +3484,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Application.Contracts": "1.0.0",
@@ -10383,10 +10471,40 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampshadeQuery/01_LampshadeQuery.csproj",
+      "msbuildProject": "../01_LampshadeQuery/01_LampshadeQuery.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
+    },
+    "DiscountManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application/DiscountManagement.Application.csproj",
+      "msbuildProject": "../DiscountManagement.Application/DiscountManagement.Application.csproj"
+    },
+    "DiscountManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj",
+      "msbuildProject": "../DiscountManagement.Application.Contracts/DiscountManagement.Application.Contracts.csproj"
+    },
+    "DiscountManagement.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj",
+      "msbuildProject": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj"
+    },
+    "DiscountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj",
+      "msbuildProject": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+    },
+    "DiscountManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../DicountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../DicountManagement.Infrastructure.EFCore/DiscountManagement.Infrastructure.EFCore.csproj"
     },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
@@ -10416,6 +10534,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DiscountManagement.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.20",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.15",
       "ShopManagement.Configuration >= 1.0.0"
@@ -10448,6 +10567,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\LampshadeProject\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
+              "projectPath": "D:\\LampshadeProject\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+            },
             "D:\\LampshadeProject\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj": {
               "projectPath": "D:\\LampshadeProject\\Lampshade\\ShopManagement.Configuration\\ShopManagement.Configuration.csproj"
             }

@@ -255,3 +255,15 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\net6
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\LampshadeProject\Lampshade\ServiceHost\obj\Debug\net6.0\scopedcss\Areas\Administration\Pages\Shared\_AdminLayout.cshtml.rz.scp.css
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\01_LampshadeQuery.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\01_LampshadeQuery.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Application.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Configuration.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Domain.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Infrastructure.EFCore.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Configuration.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Application.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Application.Contracts.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Domain.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Infrastructure.EFCore.pdb

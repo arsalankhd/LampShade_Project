@@ -1,4 +1,5 @@
-﻿using _0_Framework.Infrastructure;
+﻿using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.Slide;
 using ShopManagement.Domain.SlideAgg;
 
@@ -25,7 +26,8 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Heading = x.Heading,
                     Title = x.Title,
                     Text = x.Text,
-                    BtnText = x.BtnText
+                    BtnText = x.BtnText,
+                    Link = x.Link
                 }).FirstOrDefault(x => x.Id == id);
         }
 
@@ -39,7 +41,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                     Heading = x.Heading,
                     Title = x.Title,
                     IsRemoved = x.IsRemoved,
-                    CreationDate = x.CreationDate.ToString()
+                    CreationDate = x.CreationDate.ToFarsi()
                 }).OrderByDescending(x => x.Id).ToList();
         }
     }
