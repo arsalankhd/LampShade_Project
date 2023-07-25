@@ -51,6 +51,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IM.Domain", "IM.Domain", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Domain", "InventoryManagement.Domain\InventoryManagement.Domain.csproj", "{E6F560A8-81BC-4550-9AB5-A00658FFD058}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IM.Application", "IM.Application", "{F18B1B60-F5A8-4529-BF16-0F016AC21213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Application.Contracts", "InventoryManagement.Application.Contracts\InventoryManagement.Application.Contracts.csproj", "{CDB83FA9-2523-4CB8-BE39-EE47C908E11B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +117,10 @@ Global
 		{E6F560A8-81BC-4550-9AB5-A00658FFD058}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6F560A8-81BC-4550-9AB5-A00658FFD058}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6F560A8-81BC-4550-9AB5-A00658FFD058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB83FA9-2523-4CB8-BE39-EE47C908E11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB83FA9-2523-4CB8-BE39-EE47C908E11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB83FA9-2523-4CB8-BE39-EE47C908E11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB83FA9-2523-4CB8-BE39-EE47C908E11B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +144,8 @@ Global
 		{3814B936-F2B5-4215-A7F8-D25569C9D974} = {27E11C10-603D-499E-8C9D-8E3B76E43F89}
 		{BBAFC5FD-A8CE-4174-9397-DC16AD7DF2EE} = {57C4F2A2-E030-4269-AB4F-320CD37207F2}
 		{E6F560A8-81BC-4550-9AB5-A00658FFD058} = {BBAFC5FD-A8CE-4174-9397-DC16AD7DF2EE}
+		{F18B1B60-F5A8-4529-BF16-0F016AC21213} = {57C4F2A2-E030-4269-AB4F-320CD37207F2}
+		{CDB83FA9-2523-4CB8-BE39-EE47C908E11B} = {F18B1B60-F5A8-4529-BF16-0F016AC21213}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E17CBBB7-C592-4E8D-9ED5-6AB770CB3798}

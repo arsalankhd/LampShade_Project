@@ -207,19 +207,6 @@
         "runtime": {
           "bin/placeholder/0_Framework.dll": {}
         }
-      },
-      "InventoryManagement.Application.Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "0_Framework": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InventoryManagement.Application.Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InventoryManagement.Application.Contracts.dll": {}
-        }
       }
     }
   },
@@ -551,17 +538,11 @@
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
-    },
-    "InventoryManagement.Application.Contracts/1.0.0": {
-      "type": "project",
-      "path": "../InventoryManagement.Application.Contracts/InventoryManagement.Application.Contracts.csproj",
-      "msbuildProject": "../InventoryManagement.Application.Contracts/InventoryManagement.Application.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "0_Framework >= 1.0.0",
-      "InventoryManagement.Application.Contracts >= 1.0.0"
+      "0_Framework >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -570,11 +551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
-      "projectName": "InventoryManagement.Domain",
-      "projectPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+      "projectUniqueName": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\InventoryManagement.Application.Contracts.csproj",
+      "projectName": "InventoryManagement.Application.Contracts",
+      "projectPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\InventoryManagement.Application.Contracts.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Domain\\obj\\",
+      "outputPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -593,9 +574,6 @@
           "projectReferences": {
             "D:\\LampshadeProject\\Lampshade\\0_Framework\\0_Framework.csproj": {
               "projectPath": "D:\\LampshadeProject\\Lampshade\\0_Framework\\0_Framework.csproj"
-            },
-            "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\InventoryManagement.Application.Contracts.csproj": {
-              "projectPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\InventoryManagement.Application.Contracts.csproj"
             }
           }
         }

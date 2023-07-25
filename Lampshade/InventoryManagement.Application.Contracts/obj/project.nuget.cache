@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wdy6ZbKT75nz2B6kmFtuk8cpjUH1NQmrIW7gRVKX00fbhWFIn4+qBXFD34JBhCSa1S0RvwGPQnPy8OMHpVwp2g==",
+  "dgSpecHash": "eYRjgyUPlhpqZ/9uuhNTFRIndRgCKDljclKH1kRmzfNWfuq4PEKTFTMS7miU4YFA0Lp2KR0ELTN1DXOkSLJkVg==",
   "success": true,
-  "projectFilePath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+  "projectFilePath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Application.Contracts\\InventoryManagement.Application.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.20\\microsoft.entityframeworkcore.6.0.20.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.20\\microsoft.entityframeworkcore.abstractions.6.0.20.nupkg.sha512",
