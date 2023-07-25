@@ -267,3 +267,13 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Ap
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Application.Contracts.pdb
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Domain.pdb
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\DiscountManagement.Infrastructure.EFCore.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Configuration.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Domain.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Infrastructure.EFCore.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Configuration.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.Contracts.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Domain.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Infrastructure.EFCore.pdb
