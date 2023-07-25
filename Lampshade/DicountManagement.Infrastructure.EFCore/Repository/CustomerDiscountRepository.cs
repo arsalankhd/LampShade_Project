@@ -53,10 +53,10 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
 
             if (!string.IsNullOrWhiteSpace(searchModel.StartDate))
-                query = query.Where(x => x.StartDateGr > searchModel.StartDate.ToGeorgianDateTime());
+                query = query.Where(x => x.StartDateGr >= searchModel.StartDate.ToGeorgianDateTime());
 
             if (!string.IsNullOrWhiteSpace(searchModel.EndDate))
-                query = query.Where(x => x.EndDateGr < searchModel.EndDate.ToGeorgianDateTime());
+                query = query.Where(x => x.EndDateGr <= searchModel.EndDate.ToGeorgianDateTime());
 
             var discounts = query.OrderByDescending(x => x.Id).ToList();
 
