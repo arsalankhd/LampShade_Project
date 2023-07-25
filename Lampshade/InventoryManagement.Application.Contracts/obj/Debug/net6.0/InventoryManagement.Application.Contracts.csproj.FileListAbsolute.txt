@@ -13,3 +13,5 @@ D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\obj\Debu
 D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\obj\Debug\net6.0\refint\InventoryManagement.Application.Contracts.dll
 D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\obj\Debug\net6.0\InventoryManagement.Application.Contracts.pdb
 D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\obj\Debug\net6.0\ref\InventoryManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\InventoryManagement.Application.Contracts\bin\Debug\net6.0\ShopManagement.Application.Contracts.pdb

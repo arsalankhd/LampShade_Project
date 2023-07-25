@@ -90,6 +90,9 @@
             "projectReferences": {
               "D:\\LampshadeProject\\Lampshade\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "D:\\LampshadeProject\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "D:\\LampshadeProject\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+                "projectPath": "D:\\LampshadeProject\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
               }
             }
           }

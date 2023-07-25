@@ -41,28 +41,28 @@ namespace InventoryManagement.Application
 
         public OperationResult Increase(IncreaseInventory command)
         {
-            var operartion = new OperationResult();
+            var operation = new OperationResult();
             var inventory = _inventoryRepository.Get(command.InventoryId);
             if (inventory == null)
-                return operartion.Failed(ApplicationMessages.RecordNotFound);
+                return operation.Failed(ApplicationMessages.RecordNotFound);
 
             const long operatorId = 1;
             inventory.Increase(command.Count, operatorId, command.Description);
             _inventoryRepository.SaveChanges();
-            return operartion.Succeeded();
+            return operation.Succeeded();
         }
 
         public OperationResult Reduce(ReduceInventory command)
         {
-            var operartion = new OperationResult();
+            var operation = new OperationResult();
             var inventory = _inventoryRepository.Get(command.InventoryId);
             if (inventory == null)
-                return operartion.Failed(ApplicationMessages.RecordNotFound);
+                return operation.Failed(ApplicationMessages.RecordNotFound);
 
             const long operatorId = 1;
             inventory.Reduce(command.Count, operatorId, command.Description, 0);
             _inventoryRepository.SaveChanges();
-            return operartion.Succeeded();
+            return operation.Succeeded();
         }
 
         public OperationResult Reduce(List<ReduceInventory> command)
@@ -87,6 +87,11 @@ namespace InventoryManagement.Application
         public List<InventoryViewModel> Search(InventorySearchModel searchModel)
         {
             return _inventoryRepository.Search(searchModel);
+        }
+
+        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
+        {
+            return _inventoryRepository.GetOperationLog(inventoryId);
         }
     }
 }
