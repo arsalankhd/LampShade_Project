@@ -20,4 +20,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\ProductPictures\اتاق-خواب\" />
+    <Folder Include="wwwroot\ProductPictures\دکوری\" />
+    <Folder Include="wwwroot\ProductPictures\فضای-نگهداره\" />
+  </ItemGroup>
+
 </Project>

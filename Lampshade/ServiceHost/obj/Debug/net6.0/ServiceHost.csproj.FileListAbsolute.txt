@@ -277,3 +277,4 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.A
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.Contracts.pdb
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Domain.pdb
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Infrastructure.EFCore.pdb
+D:\LampshadeProject\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
