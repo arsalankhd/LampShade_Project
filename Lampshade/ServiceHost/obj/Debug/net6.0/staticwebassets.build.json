@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9y6h6yHiGHRsiL5uRQitGO2+Z+c8uka0UuDONe6UJo0=",
+  "Hash": "hojEYt7sw9HeSNNGpFvATX+MqEgk4OgNxuvcDM0NbdM=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -5965,6 +5965,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductPictures\\اتاق-خواب\\2023-07-31-02-36-57-img2-top-eposi1.png"
+    },
+    {
+      "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\ProductPictures\\اخبار-شرکت\\2023-08-01-19-07-29-2020-08-13-12-21-05-dark_logo1.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/اخبار-شرکت/2023-08-01-19-07-29-2020-08-13-12-21-05-dark_logo1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductPictures\\اخبار-شرکت\\2023-08-01-19-07-29-2020-08-13-12-21-05-dark_logo1.jpg"
     },
     {
       "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\ProductPictures\\دکوری\\2023-07-31-02-37-04-img3-top-eposi1.jpg",
