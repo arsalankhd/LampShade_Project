@@ -89,6 +89,7 @@ namespace _01_LampshadeQuery.Query
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.ProductId, x.DiscountRate }).ToList();
+
             var categories = _context.ProductCategories
                 .Include(x => x.Products)
                 .ThenInclude(x => x.Category)
@@ -96,7 +97,8 @@ namespace _01_LampshadeQuery.Query
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Products = MapProducts(x.Products)
+                    Products = MapProducts(x.Products),
+                    Slug = x.Slug
                 }).AsNoTracking().ToList();
 
             foreach (var category in categories)
@@ -128,16 +130,17 @@ namespace _01_LampshadeQuery.Query
 
         private static List<ProductQueryModel> MapProducts(List<Product> products)
         {
-            return products.Select(product => new ProductQueryModel
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Picture = product.Picture,
-                PictureAlt = product.PictureAlt,
-                PictureTitle = product.PictureTitle,
-                Category = product.Category.Name,
-                Slug = product.Slug
-            }).ToList();
+            return products
+                .Select(product => new ProductQueryModel
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Picture = product.Picture,
+                    PictureAlt = product.PictureAlt,
+                    PictureTitle = product.PictureTitle,
+                    Category = product.Category.Name,
+                    Slug = product.Slug,
+                }).ToList();
         }
     }
 }
