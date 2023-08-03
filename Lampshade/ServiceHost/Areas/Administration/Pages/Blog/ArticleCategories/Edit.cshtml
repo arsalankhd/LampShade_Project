@@ -93,10 +93,9 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="form-group no-margin">
+                <div class="form-group">
                     <label asp-for="CanonicalAddress" class="control-label">آدرس Canonical</label>
-                    <textarea class="form-control autogrow" asp-for="CanonicalAddress"
-                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <input type="text" class="form-control" asp-for="CanonicalAddress">
                     <span asp-validation-for="CanonicalAddress" class="error"></span>
                 </div>
             </div>

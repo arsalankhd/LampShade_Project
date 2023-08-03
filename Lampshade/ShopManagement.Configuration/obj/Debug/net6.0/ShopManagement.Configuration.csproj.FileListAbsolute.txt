@@ -35,3 +35,9 @@ D:\LampshadeProject\Lampshade\ShopManagement.Configuration\obj\Debug\net6.0\Shop
 D:\LampshadeProject\Lampshade\ShopManagement.Configuration\obj\Debug\net6.0\refint\ShopManagement.Configuration.dll
 D:\LampshadeProject\Lampshade\ShopManagement.Configuration\obj\Debug\net6.0\ShopManagement.Configuration.pdb
 D:\LampshadeProject\Lampshade\ShopManagement.Configuration\obj\Debug\net6.0\ref\ShopManagement.Configuration.dll
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Domain.dll
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Infrastructure.EFCore.dll
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Application.Contracts.pdb
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Domain.pdb
+D:\LampshadeProject\Lampshade\ShopManagement.Configuration\bin\Debug\net6.0\BlogManagement.Infrastructure.EFCore.pdb

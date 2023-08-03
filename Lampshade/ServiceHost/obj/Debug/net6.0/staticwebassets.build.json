@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hojEYt7sw9HeSNNGpFvATX+MqEgk4OgNxuvcDM0NbdM=",
+  "Hash": "MnRG2HVHUVj2KbxKav9AKN519iLXDDzpLf7bmZ9rgT0=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -5982,6 +5982,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProductPictures\\اخبار-شرکت\\2023-08-01-19-07-29-2020-08-13-12-21-05-dark_logo1.jpg"
+    },
+    {
+      "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\ProductPictures\\اخبار-شرکت\\بهترین-استفاده-از-فضای-خانه\\2023-08-03-01-10-39-article2.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/اخبار-شرکت/بهترین-استفاده-از-فضای-خانه/2023-08-03-01-10-39-article2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductPictures\\اخبار-شرکت\\بهترین-استفاده-از-فضای-خانه\\2023-08-03-01-10-39-article2.jpg"
+    },
+    {
+      "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\ProductPictures\\اخبار-شرکت\\نحوه-چیدمان-دکوراسیون-خانه\\2023-08-02-01-58-51-article1.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "ProductPictures/اخبار-شرکت/نحوه-چیدمان-دکوراسیون-خانه/2023-08-02-01-58-51-article1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductPictures\\اخبار-شرکت\\نحوه-چیدمان-دکوراسیون-خانه\\2023-08-02-01-58-51-article1.jpg"
     },
     {
       "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\ProductPictures\\دکوری\\2023-07-31-02-37-04-img3-top-eposi1.jpg",

@@ -14,18 +14,25 @@
             <div class="panel-body">
                 <form method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="Command.Title" class="control-label">عنوان </label>
-                                <input type="text" class="form-control" asp-for="Command.Title" onchange="makeSlug('Title', 'Slug')">
+                                <input type="text" class="form-control" asp-for="Command.Title" onchange="makeSlug('Command_Title', 'Command_Slug')">
                                 <span asp-validation-for="Command.Title" class="error"></span>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label asp-for="Command.Slug" class="control-label">اسلاگ</label>
                                 <input type="text" class="form-control" asp-for="Command.Slug">
                                 <span asp-validation-for="Command.Slug" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label asp-for="Command.PublishDate" class="control-label">تاریخ انتشار</label>
+                                <input class="form-control persianDateInput" asp-for="Command.PublishDate">
+                                <span asp-validation-for="Command.PublishDate" class="error"></span>
                             </div>
                         </div>
                     </div>
@@ -39,10 +46,11 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Command.CategoryId"></label>
+                                <label asp-for="Command.CategoryId">گروه مقاله</label>
                                 <select class="form-control" asp-for="Command.CategoryId" asp-items="Model.ArticleCategories">
                                     <option value="0">گروه مقاله ...</option>
                                 </select>
+                                <span asp-validation-for="Command.CategoryId" class="error"></span>
                             </div>
                         </div>
                     </div>
@@ -66,7 +74,7 @@
                         <div class="col-md-12">
                             <div class="form-group no-margin">
                                 <label asp-for="Command.ShortDescription" class="control-label">توضیحات کوتاه</label>
-                                <textarea class="form-control autogrow" asp-for="Command.ShortDescription" onchange="fillField('ShortDescription', 'MetaDescription')"
+                                <textarea class="form-control autogrow" asp-for="Command.ShortDescription" onchange="fillField('Command_ShortDescription', 'Command_MetaDescription')"
                                           style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                                 <span asp-validation-for="Command.ShortDescription" class="error"></span>
                             </div>
@@ -76,7 +84,7 @@
                         <div class="col-md-12">
                             <div class="form-group no-margin">
                                 <label asp-for="Command.Description" class="control-label">توضیحات</label>
-                                <textarea class="form-control autogrow" asp-for="Command.Description"></textarea>
+                                <textarea class="form-control" id="BodyContent" asp-for="Command.Description"></textarea>
                                 <span asp-validation-for="Command.Description" class="error"></span>
                             </div>
                         </div>
@@ -102,10 +110,9 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="form-group no-margin">
+                            <div class="form-group">
                                 <label asp-for="Command.CanonicalAddress" class="control-label">آدرس Canonical</label>
-                                <textarea class="form-control autogrow" asp-for="Command.CanonicalAddress"
-                                          style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                                <input type="text" class="form-control" asp-for="Command.CanonicalAddress">
                                 <span asp-validation-for="Command.CanonicalAddress" class="error"></span>
                             </div>
                         </div>
