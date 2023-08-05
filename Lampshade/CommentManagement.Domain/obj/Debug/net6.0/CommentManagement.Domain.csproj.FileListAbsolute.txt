@@ -1,0 +1,17 @@
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\CommentManagement.Domain.deps.json
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\CommentManagement.Domain.dll
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\CommentManagement.Domain.pdb
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\0_Framework.dll
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\CommentManagement.Application.Contracts.dll
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\0_Framework.pdb
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\bin\Debug\net6.0\CommentManagement.Application.Contracts.pdb
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.csproj.AssemblyReference.cache
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.AssemblyInfoInputs.cache
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.AssemblyInfo.cs
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.csproj.CoreCompileInputs.cache
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.csproj.CopyComplete
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.dll
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\refint\CommentManagement.Domain.dll
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\CommentManagement.Domain.pdb
+D:\LampshadeProject\Lampshade\CommentManagement.Domain\obj\Debug\net6.0\ref\CommentManagement.Domain.dll

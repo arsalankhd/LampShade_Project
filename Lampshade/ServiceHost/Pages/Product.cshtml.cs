@@ -1,13 +1,15 @@
-using _01_LampshadeQuery.Contracts.Product;
+﻿using _01_LampshadeQuery.Contracts.Product;
+using CommentManagement.Application.Contracts.Comment;
+using CommentManagement.Infrastructure.EFCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contracts.Comment;
 
 namespace ServiceHost.Pages
 {
     public class ProductModel : PageModel
     {
         public ProductQueryModel Product;
+        public AddComment Command;
         private readonly IProductQuery _productQuery;
         private readonly ICommentApplication _commentApplication;
 
@@ -18,12 +20,14 @@ namespace ServiceHost.Pages
         }
         public void OnGet(string id)
         {
-            Product = _productQuery.GetDetails(id);
+            Product = _productQuery.GetProductDetails(id);
         }
 
         public IActionResult OnPost(AddComment command, string productSlug)
         {
+            command.Type = CommentType.Product;
             var result = _commentApplication.Add(command);
+            TempData["Message"] = "کامنت شما با موفقیت ثبت شد و در انتطار تایید مدیر سایت میباشد.";
             return RedirectToPage("/Product", new { Id = productSlug });
         }
     }

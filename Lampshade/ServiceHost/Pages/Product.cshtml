@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ProductModel
 @{
-    ViewData["Title"] = "صفحه محصول " + @Model.Product.Name;
+    ViewData["Title"] = Model.Product.Name;
+    ViewData["keywords"] = Model.Product.Keywords;
+    ViewData["metaDescription"] = Model.Product.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -26,6 +28,24 @@
         </div>
     </div>
 </div>
+
+@if (TempData["Message"] != null)
+{
+    <script type="text/javascript">
+        window.onload = function() {
+            swal({
+                icon: 'success',
+                title: "موفق",
+                text: '@TempData["Message"]',
+                type: 'success',
+                showCancelButton: false,
+                allowOutsideClick: false,
+                confirmButtonColor: "green",
+                confirmButtonText: "Ok"
+            });
+        }
+    </script>
+}
 
 <div class="page-content-area">
     <div class="container">
@@ -112,7 +132,7 @@
                                         <p class="single-info">
                                             <a asp-page="/ProductCategory" asp-route-id="@Model.Product.CategorySlug">@Model.Product.Category</a>
                                         </p>
-                                        <h4 class="product-title">@Model.Product.Name</h4>
+                                        <h2 class="product-title">@Model.Product.Name</h2>
                                         <div class="product-rating" style="direction: rtl">
                                             <span class="rating">
                                                 <i class="ion-android-star active"></i>
@@ -278,14 +298,6 @@
                                                                 <div class="rating-author">
                                                                     <h3>@comment.Name</h3>
                                                                     <h3 style="color: #929292">@comment.CommnetDate</h3>
-                                                                    @*<div class="rating-star">
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <i class="fa fa-star"></i>
-                                                                <span>(5)</span>
-                                                                </div>*@
                                                                 </div>
                                                                 <p>@comment.Message</p>
                                                             </div>
@@ -295,29 +307,22 @@
                                                         <h3>نظر خود را به ما بگویید</h3>
                                                         <form method="post">
                                                             <div class="rating-form row">
-                                                                <div class="col-12 mb-15">
-                                                                    <h5></h5>
-                                                                    @*<div class="rating-star fix">
-                                                                    <i class="fa fa-star-o"></i>
-                                                                    <i class="fa fa-star-o"></i>
-                                                                    <i class="fa fa-star-o"></i>
-                                                                    <i class="fa fa-star-o"></i>
-                                                                    <i class="fa fa-star-o"></i>
-                                                                    </div>*@
+                                                                <div class="col-md-6 col-12 form-group">
+                                                                    <label asp-for="Command.Name">نام:</label>
+                                                                    <input asp-for="Command.Name" placeholder="مثال: ارسلان  خدادادی" type="text">
+                                                                    <span asp-validation-for="Command.Name" class="text-danger"></span>
                                                                 </div>
                                                                 <div class="col-md-6 col-12 form-group">
-                                                                    <label for="name">نام:</label>
-                                                                    <input name="name" id="name" placeholder="مثال: ارسلان  خدادادی" type="text">
-                                                                </div>
-                                                                <div class="col-md-6 col-12 form-group">
-                                                                    <label for="email">ایمیل:</label>
-                                                                    <input name="email" id="email" placeholder="مثال: example@gmail.com" type="email">
+                                                                    <label asp-for="Command.Email">ایمیل:</label>
+                                                                    <input asp-for="Command.Email" placeholder="مثال: test@example.com" type="email">
+                                                                    <span asp-validation-for="Command.Email" class="text-danger"></span>
                                                                 </div>
                                                                 <div class="col-12 form-group">
-                                                                    <label for="message">نظر شما:</label>
-                                                                    <textarea name="message" id="message" placeholder="نظر خود را بنویسید ..."></textarea>
+                                                                    <label asp-for="Command.Message">نظر شما:</label>
+                                                                    <textarea asp-for="Command.Message" placeholder="نظر خود را بنویسید ..."></textarea>
+                                                                    <span asp-validation-for="Command.Message" class="text-danger"></span>
                                                                 </div>
-                                                                <input type="hidden" name="productId" value="@Model.Product.Id" />
+                                                                <input type="hidden" asp-for="Command.OwnerRecordId" value="@Model.Product.Id" />
                                                                 <input type="hidden" name="productSlug" value="@Model.Product.Slug" />
                                                                 <div class="col-12">
                                                                     <input value="ارسال" type="submit">
@@ -338,3 +343,4 @@
         </div>
     </div>
 </div>
+

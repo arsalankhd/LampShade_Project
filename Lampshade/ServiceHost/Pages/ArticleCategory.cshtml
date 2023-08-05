@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ArticleCategoryModel
 @{
-    ViewData["Title"] = "مقالات";
+    ViewData["Title"] = Model.ArticleCategory.Name;
+    ViewData["keywords"] = Model.ArticleCategory.Keywords;
+    ViewData["metaDescription"] = Model.ArticleCategory.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -45,11 +47,11 @@
 
                                                     </div>
                                                     <div class="single-blog-post__content">
-                                                        <h3 class="title">
+                                                        <h2 class="title">
                                                             <a asp-page="/Article" asp-route-id="@article.Slug">
                                                                 @article.Title
                                                             </a>
-                                                        </h3>
+                                                        </h2>
                                                         <p class="post-meta">
                                                             <span class="date">@article.PublishDate</span>
                                                         </p>
@@ -91,7 +93,7 @@
                                 <div class="page-sidebar-wrapper">
                                     <div class="single-sidebar-widget">
 
-                                        <h4 class="single-sidebar-widget__title">گروه مقالات</h4>
+                                        <h2 class="single-sidebar-widget__title">گروه مقالات</h2>
                                         <ul class="single-sidebar-widget__category-list">
                                             @foreach (var category in Model.ArticleCategories)
                                             {
