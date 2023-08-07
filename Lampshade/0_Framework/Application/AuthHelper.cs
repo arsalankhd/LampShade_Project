@@ -52,7 +52,7 @@ namespace _0_Framework.Application
         {
             if (IsAuthenticated())
                 return _contextAccessor.HttpContext.User.Claims
-                    .FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
+                    .FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value;
             return null;
         }
 
