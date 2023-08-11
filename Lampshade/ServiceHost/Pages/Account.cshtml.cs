@@ -1,3 +1,4 @@
+using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -11,8 +12,10 @@ namespace ServiceHost.Pages
         [TempData]
         public string RegisterMessage { get; set; }
 
-        public Login LoginCommand;
-        public RegisterAccount RegisterCommand;
+        [BindProperty]
+        public RegisterAccount RegisterCommand { get; set; }
+        [BindProperty]
+        public Login LoginCommand { get; set; }
 
         private readonly IAccountApplication _accountApplication;
 
@@ -21,18 +24,22 @@ namespace ServiceHost.Pages
             _accountApplication = accountApplication;
         }
 
-        public void OnGet()
+        public void OnGet(bool loginIsSuccess = true, bool registerIsIsSuccess = true)
         {
+            if (!loginIsSuccess)
+                LoginMessage = ApplicationMessages.WrongUserPass;
+
+            if (!registerIsIsSuccess)
+                RegisterMessage = ApplicationMessages.DuplicatedUser;
         }
 
-        public IActionResult OnPostLogin(Login command)
+        public IActionResult OnPostLogin()
         {
-            var result = _accountApplication.Login(command);
+            var result = _accountApplication.Login(LoginCommand);
             if (result.IsSucceeded)
                 return RedirectToPage("/Index");
 
-            LoginMessage = result.Message;
-            return RedirectToPage("/Account");
+            return RedirectToPage("/Account", new { LoginIsSuccess = false });
         }
 
         public IActionResult OnGetLogout()
@@ -41,14 +48,13 @@ namespace ServiceHost.Pages
             return RedirectToPage("/Index");
         }
 
-        public IActionResult OnPostRegister(RegisterAccount command)
+        public IActionResult OnPostRegister()
         {
-            var result = _accountApplication.Register(command);
+            var result = _accountApplication.Register(RegisterCommand);
             if (result.IsSucceeded)
                 return RedirectToPage("/Account");
 
-            RegisterMessage = result.Message;
-            return RedirectToPage("/Account");
+            return RedirectToPage("/Account", new { RegisterIsIsSuccess = false });
         }
     }
 }

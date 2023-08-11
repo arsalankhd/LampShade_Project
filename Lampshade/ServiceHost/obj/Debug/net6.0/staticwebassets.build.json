@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7t0lgt0GVbPF4ODemBmi25m+2MZq5Jd6kCoA52TM9Rc=",
+  "Hash": "DLG63B7GzQjRzWr2obyeavQy7BZQbGd/tA0b+uCRRzU=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -6951,6 +6951,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img3-top-eposi1.jpg"
+    },
+    {
+      "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\Error-403.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/Error-403.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\Error-403.png"
     },
     {
       "Identity": "D:\\LampshadeProject\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\favicon.ico",

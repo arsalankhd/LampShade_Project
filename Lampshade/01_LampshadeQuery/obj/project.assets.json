@@ -2865,6 +2865,7 @@
       "CommentManagement.Infrastructure.EFCore >= 1.0.0",
       "DiscountManagement.Infrastructure.EFCore >= 1.0.0",
       "InventoryManagement.Infrastructure.EFCore >= 1.0.0",
+      "ShopManagement.Application.Contracts >= 1.0.0",
       "ShopManagement.Infrastructure.EFCore >= 1.0.0"
     ]
   },
@@ -2906,6 +2907,9 @@
             },
             "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj": {
               "projectPath": "D:\\LampshadeProject\\Lampshade\\InventoryManagement.Infrastructure.EFCore\\InventoryManagement.Infrastructure.EFCore.csproj"
+            },
+            "D:\\LampshadeProject\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj": {
+              "projectPath": "D:\\LampshadeProject\\Lampshade\\ShopManagement.Application.Contracts\\ShopManagement.Application.Contracts.csproj"
             },
             "D:\\LampshadeProject\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj": {
               "projectPath": "D:\\LampshadeProject\\Lampshade\\ShopManagement.Infrastructure.EFCore\\ShopManagement.Infrastructure.EFCore.csproj"

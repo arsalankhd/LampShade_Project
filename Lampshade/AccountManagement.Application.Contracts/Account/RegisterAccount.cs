@@ -17,6 +17,10 @@ namespace AccountManagement.Application.Contracts.Account
         public string Password { get; set; }
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        [Compare("Password", ErrorMessage = ApplicationMessages.PasswordsNotMatch)]
+        public string RePassword { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Mobile { get; set; }
 
         public IFormFile? ProfilePhoto { get; set; }

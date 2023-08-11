@@ -26,7 +26,10 @@ namespace AccountManagement.Application
         {
             var operation = new OperationResult();
             if (_accountRepository.Exists(x => x.Username == command.Username || x.Mobile == command.Mobile))
-                return operation.Failed(ApplicationMessages.DuplicatedRecord);
+                return operation.Failed(ApplicationMessages.DuplicatedUser);
+
+            if (command.Password != command.RePassword)
+                return operation.Failed(ApplicationMessages.PasswordsNotMatch);
 
             var password = _passwordHasher.Hash(command.Password);
             var path = $"profilePhotos";
@@ -46,7 +49,7 @@ namespace AccountManagement.Application
                 return operation.Failed(ApplicationMessages.RecordNotFound);
 
             if (_accountRepository.Exists(x => (x.Username == command.Username || x.Mobile == command.Mobile) && x.Id != command.Id))
-                return operation.Failed(ApplicationMessages.DuplicatedRecord);
+                return operation.Failed(ApplicationMessages.DuplicatedUser);
 
             var path = $"profilePhotos";
             var pictureName = _fileUploader.Upload(command.ProfilePhoto, path);

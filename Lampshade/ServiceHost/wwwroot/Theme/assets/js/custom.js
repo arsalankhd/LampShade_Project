@@ -26,18 +26,29 @@ function addToCart(id, name, price, picture) {
 
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
+    swal({
+        icon: 'success',
+        title: "موفق",
+        text: 'محصول با موفقیت به سبد خرید افزوده شد',
+        type: 'success',
+        showCancelButton: false,
+        allowOutsideClick: false,
+        confirmButtonColor: "green",
+        confirmButtonText: "Ok"
+    });
 }
 
 function updateCart() {
     let products = $.cookie(cookieName);
     products = JSON.parse(products);
     $("#cart_items_count").text(products.length);
+    $("#cart_items_count_mobile").text(products.length);
     const cartItemsWrapper = $("#cart_items_wrapper");
     cartItemsWrapper.html('');
     products.forEach(x => {
         const product = `<div class="single-cart-item">
                             <a href="javascript:void(0)" class="remove-icon" onclick="removeFromCart('${x.id}')">
-                                <i class="ion-android-close"></i>
+                                <i class="fa fa-trash"></i>
                             </a>
                             <div class="image">
                                 <a href="single-product.html">
@@ -65,6 +76,16 @@ function removeFromCart(id) {
     products.splice(itemToRemove, 1);
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();
+    swal({
+        icon: 'success',
+        title: "حذف محصول",
+        text: 'محصول با موفقیت از سبد خرید حذف شد',
+        type: 'success',
+        showCancelButton: false,
+        allowOutsideClick: false,
+        confirmButtonColor: "green",
+        confirmButtonText: "Ok"
+    });
 }
 
 function changeCartItemCount(id, totalId, count) {
@@ -116,32 +137,32 @@ function changeCartItemCount(id, totalId, count) {
     //});
 
 
-    const settings = {
-        "url": "https://localhost:5001/api/inventory",
-        "method": "POST",
-        "timeout": 0,
-        "headers": {
-            "Content-Type": "application/json"
-        },
-        "data": JSON.stringify({ "productId": id, "count": count })
-    };
+    //const settings = {
+    //    "url": "https://localhost:5001/api/inventory",
+    //    "method": "POST",
+    //    "timeout": 0,
+    //    "headers": {
+    //        "Content-Type": "application/json"
+    //    },
+    //    "data": JSON.stringify({ "productId": id, "count": count })
+    //};
 
-    $.ajax(settings).done(function (data) {
-        if (data.isStock == false) {
-            const warningsDiv = $('#productStockWarnings');
-            if ($(`#${id}`).length == 0) {
-                warningsDiv.append(`
-                    <div class="alert alert-warning" id="${id}">
-                        <i class="fa fa-warning"></i> کالای
-                        <strong>${data.productName}</strong>
-                        در انبار کمتر از تعداد درخواستی موجود است.
-                    </div>
-                `);
-            }
-        } else {
-            if ($(`#${id}`).length > 0) {
-                $(`#${id}`).remove();
-            }
-        }
-    });
+    //$.ajax(settings).done(function (data) {
+    //    if (data.isStock == false) {
+    //        const warningsDiv = $('#productStockWarnings');
+    //        if ($(`#${id}`).length == 0) {
+    //            warningsDiv.append(`
+    //                <div class="alert alert-warning" id="${id}">
+    //                    <i class="fa fa-warning"></i> کالای
+    //                    <strong>${data.productName}</strong>
+    //                    در انبار کمتر از تعداد درخواستی موجود است.
+    //                </div>
+    //            `);
+    //        }
+    //    } else {
+    //        if ($(`#${id}`).length > 0) {
+    //            $(`#${id}`).remove();
+    //        }
+    //    }
+    //});
 }

@@ -17,16 +17,11 @@
             return this;
         }
 
-        public OperationResult Failed(string message)
+        public OperationResult Failed(string message = "عملیات با شکست مواجه شد")
         {
-            IsSucceeded = false;
             Message = message;
+            IsSucceeded = false;
             return this;
-        }
-
-        public OperationResult Failed(object passwordsNotMatch)
-        {
-            throw new NotImplementedException();
         }
     }
 }

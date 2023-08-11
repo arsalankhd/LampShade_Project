@@ -24,6 +24,7 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.CodeAnalysi
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -32,6 +33,8 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrame
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -48,6 +51,7 @@ D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.VisualStudi
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Nancy.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\NuGet.Common.dll
 D:\LampshadeProject\Lampshade\ServiceHost\bin\Debug\net6.0\NuGet.Configuration.dll

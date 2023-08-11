@@ -51,6 +51,13 @@
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Theme/assets/js/vendors.js"></script>
     <script src="~/Theme/assets/js/active.js"></script>
+    <script src="~/Theme/assets/js/plugins.js"></script>
+    <script src="~/Theme/assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            updateCart();
+        });
+    </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @RenderSection("Scripts", false)
 </body>
